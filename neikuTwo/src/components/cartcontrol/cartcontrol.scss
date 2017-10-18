@@ -1,0 +1,41 @@
+.cartcontrol{
+    font-size: 0;
+    .move-enter,.move-leave-active{
+         opacity: 0;
+         transform: translate3D(0.48rem,0,0);
+         transform: rotate(90deg);
+         
+    }
+    .cart-decrease{
+        display: inline-block;
+        padding: 0.12rem;
+        transition: all 0.4s linear; 
+        .inner{
+            font-size: 0.48rem;
+            line-height: 0.48rem;
+            transition: all 0.4s linear; 
+            color: rgb(0,160,220);
+            transform: translate3D(0,0,0);
+            vertical-align: top;
+            display: inline-block;
+            transform: rotate(0);
+        }
+    }
+    .cart-count{
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        width:0.24rem;
+        padding-top: 0.12rem;
+        line-height: 0.48rem;
+        font-size: 0.2rem;
+        color: rgb(147,153,159);
+    }
+    .cart-add{
+        display: inline-block;
+        padding: 0.12rem;vertical-align: top;
+        font-size: 0.48rem;
+        color: rgb(0,160,220);
+        line-height: 0.48rem;transition: all 1s;
+    }
+}

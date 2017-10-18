@@ -1,0 +1,185 @@
+
+.food{
+    @include lfpos(3);
+    left: 0;top: 0;
+    bottom: 0.96rem;
+    z-index: 310;
+    @include lfbac(#fff);
+    width: 100%;
+    transition: all 0.4s; 
+    transform: translate3D(0,0,0);
+    .image-header{
+        @include lfpos(1);
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+        img{
+            @include lfpos(2);
+            @include lftl(0,0);
+            width: 100%;
+            height: 100%;
+        }
+        .back{
+            @include lfpos(2);
+            @include lftl(0.2rem,0);
+            i{
+                display: block;
+                padding: 0.2rem;
+                font-size: 0.4rem;
+                color: #fff;
+            }
+        }
+    }
+    .content{
+        padding: 0.36rem;
+        @include lfpos(1);
+        .title{
+            font-weight: 700;
+            line-height: 0.28rem;
+            margin-bottom: 0.16rem;
+            font-size: 0.28rem;text-align: left;
+            @include lfc(rgb(7,17,27));
+        }
+        .detail{
+            margin-bottom: 0.36rem;
+            line-height: 0.2rem;
+            font-size: 0;
+            .sell-count,.rating{
+                font-size: 0.2rem;
+                @include lfc(rgb(147,153,159));
+            }
+            .sell-count{
+                margin-right:0.24rem;
+            }
+        }
+    }
+    .cartcontrol-wrapper{
+        @include lfpos(2);
+        @include lfbr(0.24rem,0.24rem);
+    }
+    .buy{
+        @include lfpos(2);
+        transition: all 0.5s;
+        @include lfbr(0.36rem,0.36rem);
+        z-index: 10;
+        height: 0.48rem;
+        line-height: 0.48rem;
+        padding: 0 0.24rem;
+        @include lfbox;
+        font-size: 0.2rem;
+        @include lfbrds(0.24rem);
+        @include lfc(#fff);
+        @include lfbac(rgb(0,160,220));
+    }
+}
+.move-enter,.move-leave-active{
+         opacity: 0;
+         transform: translate3D(100%,0,0);
+         
+}
+.buy-enter,.buy-leave-active{
+         opacity: 0;
+}
+.price{
+    font-weight: 700;
+    line-height: 0.48rem;
+.now{
+    color: #E83816;
+    margin-right: 0.16rem;
+    font-size: 0.28rem;
+}
+.old{
+    text-decoration: line-through;
+    font-size: 0.2rem;
+    color: rgb(147,153,159);
+    }
+}
+.info{
+    padding: 0.36rem;
+    .title{
+        line-height: 0.28rem;
+        margin-bottom: 0.12rem;
+        font-size: 0.28rem;
+        @include lfc(rgb(7,17,27));
+        text-align: left;
+    }
+    .text{
+        @include lfc(rgb(77,85,93));
+        line-height: 0.48rem;
+        padding: 0 0.16rem;
+        font-size: 0.24rem;
+        
+    }
+}
+.rating{
+    padding-top: 0.36rem;
+    .title{
+        line-height: 0.28rem;
+        margin-left: 0.36rem;
+        font-size: 0.28rem;
+        @include lfc(rgb(7,17,27));
+        text-align: left;
+        padding-top: 0.36rem;
+    }
+    .rating-wrapper{
+        padding: 0 0.36rem;
+        .rating-item:last-child{
+            border-bottom: none;
+            
+        }
+        .rating-item{
+            @include lfpos(1);
+            padding-top: 0.32rem;
+            padding-bottom: 0.32rem;
+            border-bottom: 0.01rem solid rgba(7,17,27,0.1);
+            .user{
+                @include lfpos(2);
+                @include lftr(0.32rem,0);
+                font-size: 0;
+                line-height: 0.24rem;
+                .avatar{
+                    width: 0.24rem;
+                    height: 0.24rem;
+                    display: inline-block;
+                    @include lfbrds(50%);
+                    vertical-position: top;
+                }
+                .name{
+                    display: inline-block;
+                    vertical-position: top;
+                    font-size: 0.2rem;
+                    margin-right: 0.12rem;
+                    @include lfc(rgb(147,153,159));
+                }
+            }
+            .time{
+                margin-bottom: 0.12rem;
+                line-height: 0.24rem;
+                font-size: 0.2rem;
+                color: rgb(147,153,159);
+            }
+            .text{
+                line-height: 0.32rem;
+                font-size: 0.24rem;
+                color: rgb(7,17,27);
+                .icon-add_circle{
+                    margin-right: 0.08rem;
+                    line-height: 0.48rem;
+                    font-size: 0.24rem;
+                    color: rgb(0,160,220);
+                }
+                .icon-arrow_lift{
+                    margin-right: 0.08rem;
+                    line-height: 0.48rem;
+                    font-size: 0.24rem;
+                    color: rgb(147,153,159);
+                }
+            }
+        }
+        .no-rating{
+            padding: 0.32rem 0;
+            font-size: 0.24rem;
+            color: rgb(147,153,159);
+        }
+    }
+}

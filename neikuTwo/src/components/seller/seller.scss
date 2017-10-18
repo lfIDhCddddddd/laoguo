@@ -1,0 +1,219 @@
+.seller{
+    border-top: 0.01rem solid rgba(7,17,27,0.1);
+    @include lfpos(2);
+    top: 3.48rem;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    @include lfoh;
+    z-index: 11;
+    .overview{
+        padding: 0.36rem;
+        padding-bottom: 0;
+        @include lfpos(1);
+        .favorites{
+            @include lfpos(2);
+            top: 0.3rem;right: 0.36rem;
+            width: 0.6rem;
+            text-align: center;
+            .iconfavorite{
+                display: block;
+                text-align: center;
+                margin-bottom: 0.08rem;
+                color: #D7D7D9;
+                font-size: 0.48rem;
+                line-height: 0.48rem;
+            }
+            .iconfavorites{
+                display: block;
+                text-align: center;
+                margin-bottom: 0.08rem;
+                color: rgb(240,20,20);
+                font-size: 0.48rem;
+                line-height: 0.48rem;
+            }
+            .text{
+                text-align: center;
+                font-size: 0.2rem;
+                color: rgb(77,85,93);
+                line-height: 0.2rem;
+            }
+        }
+        .title{
+            margin-bottom: 0.16rem;
+            font-size: 0.28rem;
+            line-height: 0.28rem;
+            text-align: left;
+            @include lfc(rgb(7,17,27));
+        }
+        .desc{
+            margin-bottom: 0.36rem;
+            font-size: 0;
+            line-height: 0.36rem;
+            border-bottom: 0.01rem solid rgba(7,17,27,0.1);
+            .star{
+                display: inline-block;
+                margin-right:0.16rem;
+                vertical-align: top;
+            }
+            .text{
+                margin-right: 0.24rem;
+                display: inline-block;
+                vertical-align: top;
+                font-size: 0.2rem;
+                @include lfc(rgb(77,85,93));
+            }
+        }
+        .remark{
+            display: flex;
+            padding-bottom: 0.36rem;
+            .block{
+                flex: 1;
+                @include lftac;
+                border-right: 0.02rem solid rgba(7,17,27,0.1);
+            }
+            .block:last-child{
+                border-right: none;
+            }
+            h2{
+                margin-bottom: 0.08rem;
+                font-size: 0.2rem;
+                color: rgb(147,153,159);
+                line-height: 0.2rem;
+            }
+            .content{
+                font-size: 0.48rem;
+                font-weight: 200;
+                color: rgb(7,17,27);
+                line-height: 0.48rem;
+                span{
+                    font-size: 0.20rem;
+                    font-weight: 200; 
+                }
+            }
+        }
+    }
+    .bulletin{
+        padding-top: 0.36rem;
+        padding-left: 0.36rem;
+        padding-right: 0.36rem;
+        h1{
+            margin-bottom: 0.16rem;
+            font-size: 0.28rem;
+            line-height: 0.28rem;
+            text-align: left;
+            @include lfc(rgb(7,17,27));
+        }
+        .content-wrapper{
+            padding-bottom: 0.32rem;
+            border-bottom: 0.01rem solid rgba(7,17,27,0.1);
+            font-size: 0.24rem;
+            font-weight: 200;
+            color: rgb(240,20,20);
+            padding-left: 0.24rem;
+            padding-right: 0.24rem;
+            line-height: 0.48rem;
+            
+        }
+        .supports{
+            .border{
+                border-bottom: 0.01rem solid rgba(7,17,27,0.1);
+            }
+            .border:last-child{
+                border-bottom: none;
+            }
+                .support-item{
+                    padding-left:0.24rem;
+                    padding-top:0.32rem;
+                    padding-bottom:0.32rem;
+                    .icon{
+                        display: inline-block;
+                        @include lfwh(0.32rem,0.32rem);
+                        vertical-align: top;
+                        margin-right: 0.12rem;
+                        background-size: 100% 100%;
+                        @include lfbgno;
+                    }
+                    .text{
+                        @include lffszlh(0.24rem,0.32rem);
+                        font-weight: 200;
+                        @include lfc(rgb(7,17,27));
+                    }
+                }
+        }
+    }
+    .pics{
+        padding: 0.36rem;
+        h1{
+            margin-bottom: 0.24rem;
+            font-size: 0.28rem;
+            line-height: 0.28rem;
+            text-align: left;
+            @include lfc(rgb(7,17,27));
+        }
+        .pic-wrapper{
+            width: 100%;
+            height: 1.8rem;
+            @include lfoh;
+            white-space: nowrap;
+            @include lfpos(1);
+            .pic-list{
+                font-size: 0;
+                height: 1.8rem;
+                @include lfpos(2);
+                top: 0;left: 0;
+                .pic-item{
+                    display: inline-block;
+                    margin-right: 0.12rem;
+                    width: 2.4rem;
+                    height: 1.8rem;
+                    img{
+                        width: 2.4rem;
+                        height: 1.8rem;
+                    }
+                }
+                .pic-item:last-child{
+                    margin-right: none;
+                }
+            }
+            
+        }
+    }
+    .info{
+        padding: 0.36rem;
+        padding-bottom: 0;
+        h1{
+            padding-bottom: 0.24rem;
+            font-size: 0.28rem;
+            line-height: 0.28rem;
+            text-align: left;
+            @include lfc(rgb(7,17,27));
+        }
+        .info-item{
+            border-top: 0.01rem solid rgba(7,17,27,0.1);
+            padding-left: 0.24rem;
+            padding-right: 0.24rem;
+            padding-top: 0.32rem;
+            padding-bottom: 0.32rem;
+            font-size: 0.24rem;
+            font-weight: 200;
+            color: rgb(7,17,27);
+            line-height: 0.32rem;
+        }
+    }
+}
+.decrease{
+   background-image: url('decrease_4@2x.png');
+}
+.discount{
+    background-image: url('discount_4@2x.png');
+}
+.guarantee{
+    background-image: url('guarantee_4@2x.png');
+}
+.invoice{
+    background-image: url('invoice_4@2x.png');
+}
+.special{
+    background-image: url('special_4@2x.png');
+ }

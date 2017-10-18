@@ -1,0 +1,253 @@
+@mixin lfling{
+    margin: 0;
+    padding: 0;
+}
+@mixin lffsz($fs){
+    font-size: $fs;
+}
+@mixin lfcb{
+    clear: both;
+}
+@mixin lfbg($urls){
+    background-image:url($urls);
+}
+@mixin lfbgp($urls,$urlss){
+    background-position:url($urls,$urlss);
+}
+@mixin lflsn{
+    list-style: none;
+}
+@mixin lftdn{
+    text-decoration: none;
+}
+@mixin lfwh($width,$height){
+    width: $width;
+    height: $height;
+}
+@mixin lfbgc($color){
+    background-color: $color;
+}
+@mixin lfbac($color){
+    background-color: $color;
+}
+@mixin lfc($color){
+    color: $color;
+}
+@mixin lfpos($dw){
+    @if($dw == 1){
+        position: relative;
+    }
+    @if($dw == 2){
+        position: absolute;
+    }
+    @if($dw == 3){
+        position: fixed;
+    }
+}
+@mixin lftl($top,$left){
+    top: $top;
+    left:$left;
+}
+@mixin lftr($top,$right){
+    top: $top;
+    right:$right;
+}
+@mixin lfbl($bottom,$left){
+    bottom: $bottom;
+    left:$left;
+}
+@mixin lfbr($bottom,$right){
+    bottom: $bottom;
+    right:$right;
+}
+@mixin lfol($color){
+    outline: 1px solid $color;
+}
+@mixin lfbdt($width,$color){
+    border-top: $width solid $color;
+}
+@mixin lfshed($width,$color){
+    border: $width dashed $color;
+}
+@mixin lfshedt($width,$color){
+    border-top: $width dashed $color;
+}
+@mixin lfshedl($width,$color){
+    border-left: $width dashed $color;
+}
+@mixin lfshedr($width,$color){
+    border-right: $width dashed $color;
+}
+@mixin lfshedb($width,$color){
+    border-bottom: $width dashed $color;
+}
+@mixin lfshedt($width,$color){
+    border-top: $width dashed $color;
+}
+@mixin lfshedl($width,$color){
+    border-left: $width dashed $color;
+}
+@mixin lfshedr($width,$color){
+    border-right: $width dashed $color;
+}
+@mixin lfshedb($width,$color){
+    border-bottom: $width dashed $color;
+}
+@mixin lfbdl($width,$color){
+    border-left: $width solid $color;
+}
+@mixin lfbdr($width,$color){
+    border-right: $width solid $color;
+}
+@mixin lfbdb($width,$color){
+    border-bottom: $width solid $color;
+}
+@mixin lfbd($width,$color){
+    border: $width solid $color;
+}
+@mixin lfoh{
+    overflow: hidden;
+}
+@mixin lffl($fd){
+    @if($fd == 1){
+        float: left;
+    }@else if($fd == 2){
+        float: right;
+    }
+}
+@mixin lfbgp($width,$height){
+    background-position:$width $height;
+}
+@mixin lfml($ml){
+    margin-left: $ml;
+}
+@mixin lfmt($mt){
+    margin-top: $mt;
+}
+@mixin lfmr($mr){
+    margin-right: $mr;
+}
+@mixin lfmb($mr){
+    margin-bottom: $mr;
+}
+@mixin lfpl($ml){
+    padding-left: $ml;
+}
+@mixin lfpt($ml){
+    padding-top: $ml;
+}
+@mixin lfpr($ml){
+    padding-right: $ml;
+}
+@mixin lfpb($ml){
+    padding-bottom: $ml;
+}
+@mixin lfpa($ml){
+    padding: $ml;
+}
+@mixin lfzindex($zindex){
+    z-index:$zindex;
+}
+@mixin lfma2($margin){
+    margin:$margin;
+}
+@mixin lfma1($margin){
+    margin:$margin auto;
+}
+@mixin lfma{
+    margin:0 auto;
+}
+@mixin lftac{
+    text-align: center;
+}
+@mixin lflh($lh){
+    line-height: $lh;
+}
+@mixin lffwb{
+    font-weight: bold;
+}
+@mixin lfbrds($radius){
+    border-radius: $radius;
+}
+@mixin lfkeyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+@mixin lfdbfl{
+    display:block;
+    float:left;
+}
+@mixin lfdn{
+    display:none;
+}
+@mixin lfdp{
+    display:block;
+}
+@mixin lfdbfr{
+    display:block;
+    float:right;
+}
+@mixin lfdb{
+    display:block;
+}
+@mixin lfcp{
+    cursor: pointer;
+}
+@mixin lffszlh($size1,$size2){
+    font-size: $size1;
+    line-height: $size2;
+}
+@mixin lftransform($deg){
+    transform: rotate($deg);
+}
+@mixin lftforms($deg){
+    transform: scale($deg);
+}
+@mixin lfop($op){
+    opacity: $op;
+}
+@mixin lftran($op){
+    transition: all $op;
+}
+
+@mixin lfbgsz($op1,$op2){
+    background-size: $op1 $op2;
+}
+@mixin lfbgsz1($op1){
+    background-size: $op1;
+}
+@mixin lfbgor($op1,$op2){
+    background-origin: $op1 $op2;
+}
+@mixin lfbgno{
+    background-repeat: no-repeat;
+}
+@mixin lfjianbian($top,$left,$right){
+    background:-webkit-linear-gradient($top,$left,$right);
+
+}
+@mixin lfbox{
+    box-sizing:border-box;
+}
+@mixin lfbdn{
+    border: none;
+}
+@mixin lftin($ol){
+    text-indent:$ol ;
+}
+@mixin lfbgimg($url){
+    background-image: url($url+'2x.png');
+//  @media (-webkit-min-device-pixel-ratio:3),(min-device-pixel-radio:3){
+//      background-image:url($url　+ '3x.png');
+//  }
+}

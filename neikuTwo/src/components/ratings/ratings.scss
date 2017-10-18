@@ -1,0 +1,160 @@
+.ratings{
+    border-top: 0.01rem solid rgba(7,17,27,0.1);
+    @include lfpos(2);
+    top: 3.48rem;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    @include lfoh;
+    z-index: 11;
+    .overview{
+        display: flex;
+        padding: 0.36rem 0;
+        .overview-left{
+            flex: 0 0 2.74rem;
+            float: left;
+            width: 2.75rem;
+            @include lfbox;
+            border-right: 0.02rem solid rgba(7,17,27,0.1);
+            @include lftac;
+            padding: 0.12rem 0;
+            .score{
+                line-height: 0.56rem;
+                font-size: 0.48rem;
+                color: rgb(255,253,0);
+                margin-bottom: 0.12rem;
+            }
+            .title{
+                line-height: 0.24rem;
+                font-size: 0.24rem;
+                color: rgb(7,17,27);
+                margin-bottom: 0.16rem;
+            }
+            .rank{
+                font-size: 0.2rem;
+                color: #B4B4B6;
+                line-height: 0.2rem;
+            }
+        }
+        .overview-right{
+            flex: 1;
+            padding: 0.12rem 0 0.12rem 0.48rem;
+            width: 4.74rem;
+            float: left;@include lfbox;
+            .score-wrapper{
+                margin-bottom: 0.16rem;
+                line-height: 0.36rem;
+                font-size: 0;
+                .title{
+                    display: inline-block;
+                    font-size: 0.24rem;
+                    vertical-align: top;
+                    color: rgb(7,17,27);
+                    line-height: 0.36rem;
+                }
+                .star{
+                    display: inline-block;
+                    margin: 0 0.24rem;
+                    vertical-align: top;
+                }
+                .score{
+                    vertical-align: top;
+                    display: inline-block;
+                    font-size: 0.24rem;
+                    color: rgb(255,153,0);
+                }
+            }
+            .delivery-wrapper{
+                font-size: 0;
+                .title{
+                    font-size: 0.24rem;
+                    color: rgb(7,17,27);
+                    line-height: 0.36rem;
+                }
+                .delivery{
+                    margin-left: 0.24rem;
+                    font-size: 0.24rem;
+                    color: rgb(147,153,159);
+                }
+            }
+        }
+    }
+    .rating-wrapper{
+        padding: 0 0.36rem;
+        .rating-item:last-child{
+            border-bottom: none;
+        }
+        .rating-item{
+            margin-right:0.24rem;
+            padding:0.36rem 0;
+            display: flex;
+            border-bottom: 0.01rem solid rgba(7,17,27,0.1);
+            .avatar{
+                flex: 0 0 0.56rem;
+                width: 0.56rem;
+                margin-right: 0.24rem;
+                img{
+                    width: 0.56rem;
+                    display: inline-block;
+                    @include lfbrds(50%);
+                }
+            }
+            .content{
+                @include lfpos(1);
+                flex: 1;
+                .name{
+                    text-align: left;
+                    margin-bottom: 0.08rem;
+                    line-height: 0.24rem;
+                    font-size: 0.2rem;
+                    color: rgb(7,17,27);
+                }
+                .star-wrapper{
+                    margin-bottom: 0.12rem;
+                    font-size: 0;
+                    .star{
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-right: 0.12rem;
+                    }
+                    .delivery{
+                        display: inline-block;
+                        vertical-align: top;
+                        color: rgb(147,153,159);
+                        line-height: 0.24rem;
+                        font-size: 0.2rem;
+                    }
+                }
+                .text{
+                    line-height: 0.36rem;
+                    color: rgb(7,17,27);
+                    font-size: 0.24rem;
+                    margin-bottom: 0.16rem;
+                }
+                .recommend{
+                    line-height: 0.32rem;
+                    
+                    .icon-add_circle{
+                        color: #0598E6;
+                        font-size: 0.24rem;
+                    }
+                    .item{
+                        display: inline-block;
+                        border: 0.01rem solid rgba(7,17,27,0.1);
+                        @include lfbrds(0.02rem);
+                        margin-right: 0.16rem;
+                        margin-bottom: 0.08rem;font-size: 0.18rem;
+                        padding: 0.02rem 0.04rem;
+                    }
+                }
+                .time{
+                    @include lfpos(2);
+                    @include lftr(0,0);
+                    color: rgb(147,153,159);
+                    font-size: 0.1rem;
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+.goods{
+    @include lfpos(2);
+    width: 100%;
+    @include lfoh;
+    height: auto;
+    float: left;
+    top: 3.48rem;
+    bottom: 0.92rem;
+    display: flex;
+    .menu-wrapper{
+        flex: 0 0 1.6rem;
+        width: 1.6rem;
+        background: #f3f5f7;
+        @include lfbox;
+        
+        .menu-item{
+            display: table;
+            @include lfwh(1.12rem,1.08rem);
+            @include lflh(0.28rem);
+            width:100%;
+            .icon{
+                display: inline-block;
+                @include lfwh(0.32rem,0.32rem);
+                vertical-align: top;
+                margin-right: 0.04rem;
+                margin-top: -0.02rem;
+                background-size: 100% 100%;
+                @include lfbgno;
+            }
+            .text{
+                font-size: 0.24rem;
+                display: table-cell;
+                vertical-align: middle;
+                width:100%;
+                border-bottom: 0.01rem solid rgba(7,17,27,0.1);
+                padding: 0 0.24rem;
+            }
+        }
+        .current{
+            background: #fff;
+            font-weight: 700;
+            margin-top: -0.01rem;
+            @include lfpos(1);
+            z-index: 10;
+            .text{
+                border-bottom:none ;
+            }
+        }
+        .menu-item:last-child .text{
+            border-bottom: 0.01rem solid rgba(7,17,27,0);
+        }
+    }
+    .foods-wrapper{
+        flex: 1;
+        .title{
+            @include lfpl(0.28rem);
+            height: 0.56rem;
+            line-height: 0.56rem;
+            border-left:0.04rem solid #d9dde1;
+            font-size: 0.24rem;
+            color: rgb(147,153,159);
+            background: #f3f5f7;
+            text-align: left;
+            @include lfbox;
+            @include lfpl(0.36rem);
+        }
+        ul{
+            .food-item{
+                display: flex;
+                margin: 0.36rem;
+                margin-bottom: none;
+                padding-bottom: 0.36rem;
+                border-bottom: 0.01rem solid rgba(7,17,27,0.1);
+                .icon{
+                    @include lfwh(1.14rem,1.14rem);
+                    flex: 0 0 1.14rem;
+                    margin-right: 0.2rem;
+                    img{
+                        @include lfwh(100%,100%);
+                    }
+                }
+                .content{
+                    flex: 1;
+                    @include lfpos(1);
+                    .name{
+                        text-align: left;
+                        margin: 0.04rem 0 0.16rem;
+                        @include lffszlh(0.28rem,0.28rem);
+                        color: rgb(7,17,27);
+                    }
+                    .desc{
+                        margin-bottom: 0.16rem;
+                        @include lffszlh(0.2rem,0.2rem);
+                        color: rgb(147,153,159);
+                    }
+                    .extra{
+                        @include lffszlh(0.2rem,0.2rem);
+                        color: rgb(147,153,159);
+                        .count{
+                            margin-right: 0.24rem;
+                        }
+                    }
+                    .price{
+                        font-weight: 700;
+                        line-height: 0.48rem;
+                        .now{
+                            color: #E83816;
+                            margin-right: 0.16rem;
+                            font-size: 0.28rem;
+                        }
+                        .old{
+                            text-decoration: line-through;
+                            font-size: 0.2rem;
+                            color: rgb(147,153,159);
+                        }
+                    }
+                    .cartcontrol-wrapper{
+                        @include lfpos(2);
+                        @include lfbr(0,0);
+                    }
+                }
+            }
+            .food-item:last-child{
+                border-bottom: none;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.decrease{
+   background-image: url('decrease_3@2x.png');
+}
+.discount{
+    background-image: url('discount_3@2x.png');
+}
+.guarantee{
+    background-image: url('guarantee_3@2x.png');
+}
+.invoice{
+    background-image: url('invoice_3@2x.png');
+}
+.special{
+    background-image: url('special_3@2x.png');
+ }
+ 

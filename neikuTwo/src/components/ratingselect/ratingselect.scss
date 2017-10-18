@@ -1,0 +1,63 @@
+.ratingselect{
+    .rating-type{
+        padding: 0.36rem 0;
+        margin:  0 0.36rem;
+        border-bottom: 0.01rem solid rgba(7,17,27,0.1);
+        font-size: 0;
+        .block{
+            display: inline-block;
+            padding: 0.16rem 0.24rem;
+            margin-right:0.16rem;
+            @include lfbrds(0.02rem);
+            line-height: 0.32rem;
+            @include lfc(rgb(77,85,93));
+            font-size: 0.24rem;
+               .count{
+                   margin-left:0.01rem;
+                   font-size: 0.16rem;
+               }
+        }
+        .positive{
+            background: rgba(0,160,220,0.2);
+
+        }
+        .active1{
+                color: #fff;
+                background: rgb(0,160,220);
+        }
+        .negative{
+            background: rgba(77,85,93,0.2);
+        }
+        .active2{
+                color: #fff;
+                background: rgb(77,85,93);
+        }
+    }
+    .switch{
+        padding: 0.24rem 0.36rem;
+        border-bottom: 0.02rem solid rgba(7,17,27,0.1);
+        @include lflh(0.48rem);
+        @include lfc(rgb(147,153,159));
+        font-size: 0;
+        .icon-shopping_cart{
+            margin-right: 0.08rem;
+            font-size: 0.48rem;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .text{
+            font-size: 0.24rem;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+    .on{
+        .icon-shopping_cart{
+            margin-right: 0.08rem;
+            font-size: 0.48rem;
+            display: inline-block;
+            vertical-align: top;
+            color: #079B54;
+        }
+    }
+}

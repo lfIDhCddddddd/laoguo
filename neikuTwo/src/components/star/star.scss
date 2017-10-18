@@ -1,0 +1,78 @@
+.star{
+    font-size: 0 ;
+    height: 0.48rem;
+    
+    .star-item{
+        display: inline-block;
+        @include lfbgno;
+    }
+}
+    .star-48{
+        .star-item{
+            width: 0.4rem;
+            height: 0.4rem;
+            margin-right: 0.20rem;
+            background-size: 100% 100%;
+        }
+        .on{
+            background: url(star48_on@3x.png)no-repeat;
+            background-size: 100% 100%;
+        }
+        .half{
+            background: url(star48_half@3x.png)no-repeat;
+            background-size: 100% 100%;
+        }
+        .off{
+            background: url(star48_off@3x.png)no-repeat;
+            background-size: 100% 100%;
+        }
+        .star-item:last-child{
+            margin-right: 0;
+        }
+    }
+    .star-36{
+        .star-item{
+            width: 0.3rem;
+            height: 0.3rem;
+            margin-right: 0.20rem;
+        }
+        .on{
+            background: url(star36_on@3x.png)no-repeat;
+            background-size: 100% 100%;
+        }
+        .half{
+            background: url(star36_half@3x.png)no-repeat;
+            background-size: 100% 100%;
+        }
+        .off{
+            background: url(star36_off@3x.png)no-repeat;
+            background-size: 100% 100%;
+        }
+        .star-item:last-child{
+            margin-right: 0;
+        }
+    }
+    .star-24{
+        .star-item{
+            width: 0.2rem;
+            height: 0.2rem;
+            margin-right: 0.20rem;
+            background-size: 100% 100%;
+            
+        }
+        .on{
+            background: url(star24_on@3x.png)no-repeat;
+            background-size: 100% 100%;
+        }
+        .half{
+            background: url(star24_half@3x.png)no-repeat;
+            background-size: 100% 100%;
+        }
+        .off{
+            background: url(star24_off@3x.png)no-repeat;
+            background-size: 100% 100%;
+        }
+        .star-item:last-child{
+            margin-right: 0;
+        }
+    }
